@@ -11,9 +11,9 @@ public class Test {
             car.printInfo();
         }
 
-        cars[0].setConditioner(true);
-        cars[1].setConditioner(true);
-        cars[2].setConditioner(true);
+        for (int i = 0; i < cars.length; i++) {
+            cars[i].setConditioner(true);
+        }
 
         for (Car car : cars) {
             car.printInfo();

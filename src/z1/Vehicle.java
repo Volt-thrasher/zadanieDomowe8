@@ -34,4 +34,14 @@ public class Vehicle {
     public void setConsumption(double consumption) {
         this.consumption = consumption;
     }
+
+    double range () {
+        return getTank()/getConsumption()*100;
+    }
+
+    String getInfo() {
+        String info = "Nazwa pojazdu: " + getName() + ", Pojemnosc baku: " + getTank() + ", Spalanie na 100km: " +
+                getConsumption();
+        return info;
+    }
 }

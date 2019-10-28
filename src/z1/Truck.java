@@ -22,7 +22,7 @@ public class Truck extends Car {
         if (isConditioner()) {
             consumption += 1.6;
         }
-        consumption += 0.5 * weight / 100;
+        consumption += 0.5 * getWeight()/ 100;
         return consumption;
     }
 
@@ -32,7 +32,7 @@ public class Truck extends Car {
 
     @Override
     String getInfo() {
-        return super.getInfo() + ", Masa ladunku: " + weight;
+        return super.getInfo() + ", Masa ladunku: " + getWeight();
     }
 
     public void printInfo() {

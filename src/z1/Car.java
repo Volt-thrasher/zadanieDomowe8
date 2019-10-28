@@ -30,10 +30,12 @@ public class Car extends Vehicle {
         return consumption;
     }
 
+    @Override
     double range() {
         return getTank() / totalConsumption() * 100;
     }
 
+    @Override
     String getInfo() {
         String info = "Nazwa pojazdu: " + getName() + ", Pojemnosc baku: " + getTank() + ", Spalanie na 100km: " +
                 totalConsumption() + ", Climatyzacja " + ac();
