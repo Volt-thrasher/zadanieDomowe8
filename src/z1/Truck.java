@@ -26,16 +26,10 @@ public class Truck extends Car {
         return consumption;
     }
 
-    double range() {
-        return super.range();
-    }
 
     @Override
     String getInfo() {
         return super.getInfo() + ", Masa ladunku: " + getWeight();
     }
 
-    public void printInfo() {
-        super.printInfo();
-    }
 }

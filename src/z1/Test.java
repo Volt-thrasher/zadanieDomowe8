@@ -8,7 +8,7 @@ public class Test {
         cars[2] = new Car("Volvo", 80, 11, false);
 
         for (Car car : cars) {
-            car.printInfo();
+            System.out.println(car.getInfo());
         }
 
         for (int i = 0; i < cars.length; i++) {
@@ -16,7 +16,7 @@ public class Test {
         }
 
         for (Car car : cars) {
-            car.printInfo();
+            System.out.println(car.getInfo());
         }
     }
 }

@@ -38,14 +38,8 @@ public class Car extends Vehicle {
     @Override
     String getInfo() {
         String info = "Nazwa pojazdu: " + getName() + ", Pojemnosc baku: " + getTank() + ", Spalanie na 100km: " +
-                totalConsumption() + ", Climatyzacja " + ac();
+                totalConsumption() + ", Climatyzacja " + ac() + " Zasieg: " + range();
         return info;
     }
 
-    public void printInfo() {
-        System.out.print(getInfo());
-        System.out.print(" Zasieg: ");
-        System.out.printf("%.2f", range());
-        System.out.println(" ");
-    }
 }
